@@ -12,7 +12,7 @@ class Model(AutoInit):
     def __init__(self, f_n=None, f_m=None,
             vi_n=None, vt_n=None, vn_n=None, tex_n=None,
             obj=None, tex=None):
-        self.L2W = Affine.var(())
+        self.L2W = Affine.field(())
 
         self.faces = None
         self.vi = None
